@@ -103,6 +103,9 @@
     
     <div class="slide section">
       <h1>My App</h1>
+    </div>
+    
+    <div class="slide">
       <img src="images/app/big-icon.png" />
     </div>
     
@@ -137,6 +140,41 @@
         <li>Buttons or Swipe?</li>
         <li>"Random" does it get used?</li>
       </ul>
+    </div>
+    
+    <div class="slide section">
+      <h1>The Mechanism</h1>
+    </div>
+    
+    <div class="slide">
+      <h1>Page Views</h1>
+      <pre>
+        trackPageView(
+          "/LearnChineseActivity");
+          
+        trackPageView(
+          "/FlashCardActivity
+            /Level/HSK1
+              /Card/1");
+      </pre>
+    </div>
+    
+    <div class="slide">
+      <h1>Events</h1>
+      <pre>
+        trackEvent(
+          "LearnChineseActivity",
+            "Start",             
+              "HSK1", 1);        
+        
+        trackEvent(
+          "FlashCardActivity",
+            "Swipe",
+              "Next", 1);
+        or
+            "Click",
+              "Random", 1);
+      </pre>
     </div>
   
     <div class="slide">
