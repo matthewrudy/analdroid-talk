@@ -98,7 +98,7 @@
             $('.slideContent')
                 .height(slideH*0.95)
                 .css('margin', (slideH*0.05).toString() + "px auto 0");
-            $('img').css('width', "100%");
+            $('img.magic').css('width', "100%");
             $('embed').each(function() {
                 var ratio, imgWidth, newWidth, $el, $parent, $object;
                 $el = $(this);
